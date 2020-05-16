@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+<h1>this is home page</h1>
+<p>perfectly fine</p>
+{{ greet }}
+
+<form action="{% url 'count' %}">
+    <textarea name="fulltext" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Count">
+</form>
+<a href="{% url 'about' %}">About us</a>
+</body>
+</html>
